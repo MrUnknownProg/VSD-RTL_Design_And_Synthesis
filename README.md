@@ -48,6 +48,7 @@ tb_file.vcd
 You will open this file in GTKWave to inspect signal activity.
 
 ---
+![Alt text](images/image1.png)
 
 ## 2. GTKWave
 
@@ -65,6 +66,7 @@ gtkwave tb_file.vcd
 - You can then add signals to the waveform window, zoom in/out, and inspect timing relationships
 
 ---
+![Alt text](images/image2.png)
 
 ## 3. Yosys
 
@@ -112,6 +114,8 @@ synth -top rtl_file
 - `rtl_file` here is the name of the top module (not the filename extension)  
 - Converts your RTL into an optimized generic gate‑level netlist
 
+![Alt text](images/image3.png)
+
 ### 3.5 Technology mapping and optimization
 
 Map the generic netlist onto cells from the Liberty library and further optimize it:
@@ -123,6 +127,8 @@ abc -liberty /path/to/libPDK_file.lib
 - Uses the ABC engine for technology mapping  
 - Improves timing and area based on the chosen library
 
+![Alt text](images/image4.png)
+
 ### 3.6 Display schematic
 
 Generate and display a schematic of the synthesized design:
@@ -133,6 +139,8 @@ show
 
 - Opens a graphical view of the synthesized logic  
 - Useful to quickly verify the implemented structure
+
+![Alt text](images/image5.png)
 
 ### 3.7 Write the synthesized netlist
 
@@ -146,6 +154,8 @@ write_verilog -noattr rtl_file_netlist.v
 - `-noattr` removes tool‑specific attributes and extra annotations so the output Verilog is cleaner and easier to read
 
 ---
+
+![Alt text](images/image6.png)
 
 ## 4. Typical Flow Summary
 
