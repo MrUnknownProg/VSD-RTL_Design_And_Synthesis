@@ -1,4 +1,6 @@
 # VSD-RTL_Design_And_Synthesis
+
+## DAY 1
 ## Verilog Simulation and Synthesis Flow
 
 This repository contains basic Verilog experiments demonstrating how to:
