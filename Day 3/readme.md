@@ -135,7 +135,7 @@ Functionality:
 
 ---
 
-### Lab 4
+### opt_check4
 ```
 module opt_check4 (input a, input b, input c, output y);
 assign y = a ? (b ? (a & c) : c) : (!c);
@@ -156,6 +156,11 @@ Key points:
 
 ---
 
+### multiple_modules
+![Alt text](images/image15.png)
+![Alt text](images/image16.png)
+![Alt text](images/image17.png)
+
 ### Lab 5
 ```
 module dff_const1 (input clk, input reset, output reg q);
@@ -173,7 +178,8 @@ Behavior:
 - When not in reset, the flop always loads logic 1.
 - Synthesis tools may replace this with a simpler structure since the steady-state value is constant.
 
-
+![Alt text](images/image18.png)
+![Alt text](images/image19.png)
 
 ---
 
@@ -193,7 +199,31 @@ Behavior:
 - Output `q` is always 1, regardless of `clk` or `reset`.
 - The optimizer can remove the flop completely and replace it with a constant 1 driver in the netlist.
 
+![Alt text](images/image20.png)
+![Alt text](images/image21.png)
 
+---
+
+### dff_const3
+![Alt text](images/image22.png)
+![Alt text](images/image23.png)
+
+---
+
+### dff_const4
+![Alt text](images/image24.png)
+![Alt text](images/image25.png)
+
+---
+
+### dff_const5
+![Alt text](images/image26.png)
+![Alt text](images/image27.png)
+
+---
+
+### counter_opt
+![Alt text](images/image28.png)
 
 ---
 
