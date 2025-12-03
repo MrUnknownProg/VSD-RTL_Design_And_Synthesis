@@ -11,7 +11,7 @@ Welcome to Day 3 of this workshop! Today focuses on optimizing combinational and
 - [3. Cloning](#3-cloning)
 - [4. Retiming](#4-retiming)
 - [5. Labs on Optimization](#5-labs-on-optimization)
-- 
+  
 ---
 
 ## 1. Constant Propagation
