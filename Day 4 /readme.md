@@ -92,9 +92,9 @@ iverilog ../my_lib/verilog_modelprimitives.v ../my_lib/verilog_modelsky130_fd_sc
 gtkwave tb_ternary_mux.vcd
 ```
 ### Before synthesis
-![Alt text](images/image1)
+![Alt text](images/image1.png)
 ### After Synthesis
-![Alt text](images/image2)
+![Alt text](images/image2.png)
 
 ---
 
@@ -116,9 +116,9 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 gtkwave tb_bad_mux.vcd
 ```
 ### Before synthesis
-![Alt text](images/image3)
+![Alt text](images/image3.png)
 ### After Synthesis
-![Alt text](images/image4)
+![Alt text](images/image4.png)
 
 ---
 ### Lab 3: BLocking Caveat
@@ -141,9 +141,9 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 gtkwave tb_blocking_caveat.vcd
 ```
 ### Before synthesis
-![Alt text](images/image5)
+![Alt text](images/image5.png)
 ### After Synthesis
-![Alt text](images/image6)
+![Alt text](images/image6.png)
 
 ---
 
