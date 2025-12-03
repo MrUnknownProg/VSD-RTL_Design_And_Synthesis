@@ -34,7 +34,7 @@ Benefits:
 - Lower area and potentially lower power.
 - Fewer nodes to analyze during timing and verification.
 
-
+![Alt text](images/image1.png)
 
 ---
 
@@ -60,7 +60,7 @@ Workflow:
 - Split the fanout so each clone drives a subset of loads.
 - Re-run place, route, and timing to confirm slack and power improvements.
 
-
+![Alt text](images/image2.png)
 
 ---
 
@@ -94,6 +94,9 @@ opt_clean -purge
 ```
 between `abc -liberty` and `synth -top` to clean up unused logic.
 
+![Alt text](images/image3.png)
+![Alt text](images/image4.png)
+![Alt text](images/image5.png)
 
 ---
 
@@ -109,6 +112,9 @@ Behavior:
 - When `a = 0`, output `y` equals `b`.
 - Functionally this is a 2:1 mux with one data input tied to logic 1.
 
+![Alt text](images/image6.png)
+![Alt text](images/image7.png)
+![Alt text](images/image8.png)
 
 ---
 
@@ -123,7 +129,9 @@ Functionality:
 - Same logical form: `y = a ? 1 : b`.
 - Acts as a mux where `a` selects between constant 1 and `b`.
 
-
+![Alt text](images/image9.png)
+![Alt text](images/image10.png)
+![Alt text](images/image11.png)
 
 ---
 
@@ -142,7 +150,9 @@ Key points:
   - If `a = 0`, `y = ~c`.
 - Tools will fold the extra conditions and generate a compact implementation.
 
-
+![Alt text](images/image12.png)
+![Alt text](images/image13.png)
+![Alt text](images/image14.png)
 
 ---
 
