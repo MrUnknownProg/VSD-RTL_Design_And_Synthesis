@@ -180,21 +180,27 @@ yosys
 Inside the Yosys shell:
 
 1. Read Liberty timing library
-```read_liberty -lib /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+read_liberty -lib /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 2. Read Verilog RTL
-```read_verilog /path/to/dff_asyncres.v
+```
+read_verilog /path/to/dff_asyncres.v
 ```
 3. Generic synthesis
-```synth -top dff_asyncres
+```
+synth -top dff_asyncres
 ```
 4. Map flip-flops to library cells
-```dfflibmap -liberty /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+dfflibmap -liberty /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 5. Technology mapping and optimization
-```abc -liberty /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+abc -liberty /path/to/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 6. Visualize gate-level netlist
-```show
+```
+show
 ```
 This workflow ties the RTL to the SKY130 standard-cell library, enabling timing-aware mapping and a gate-level netlist suitable for downstream physical design.
