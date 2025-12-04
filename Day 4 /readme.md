@@ -158,9 +158,3 @@ gtkwave tb_blocking_caveat.vcd
 
 ---
 
----
-
-
-
-### 3.1 Blocking (`=`)
-
