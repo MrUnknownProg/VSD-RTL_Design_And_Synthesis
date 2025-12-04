@@ -231,9 +231,3 @@ Behavior:
   - Retiming to reposition registers for better performance.
 - Labs: Six Verilog exercises that illustrate how synthesis tools optimize both combinational circuits and flip-flop-based designs.
 
-
-
-
-
-### Lab 1
-
