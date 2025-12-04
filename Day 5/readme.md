@@ -61,10 +61,10 @@ always @(*) begin
 if (i0) y <= i1; // No fallback → latch created
 end
 endmodule
-![Lab 1](https://github.com/user-attachments/assets/91d1cc1d-bb3a-4ea8-a272-363414777868)
+![Alt text](images/image1.png)
 
 ### Lab 2: Result After Synthesis
-![Lab 2](https://github.com/user-attachments/assets/691045e7-39e0-4e6c-98bd-511b501fbe35)
+![Alt text](images/image2.png)
 
 ### Lab 3: Chained Conditions (Incomplete)
 module chain_missing (input i0,i1,i2,i3, output reg y);
@@ -73,10 +73,10 @@ if (i0) y <= i1;
 else if (i2) y <= i3; // Gap when both false
 end
 endmodule
-![Lab 3](https://github.com/user-attachments/assets/2f614956-e4af-4d29-80ae-13a167e7831d)
+![Alt text](images/image3.png)
 
 ### Lab 4: Synthesis Output
-![Lab 4](https://github.com/user-attachments/assets/880ff7bb-23fb-4362-bf8f-a2494a854b53)
+![Alt text](images/image4.png)
 
 ### Lab 5: Full Coverage Case
 module safe_case (input i0,i1,i2, input [1:0] sel, output reg y);
@@ -88,10 +88,10 @@ default: y = i2; // Covers all possibilities
 endcase
 end
 endmodule
-![Lab 5](https://github.com/user-attachments/assets/cfe97c45-a487-4f06-b4a2-74b3a61bee14)
+![Alt text](images/image5.png)
 
 ### Lab 6: Clean Synthesis
-![Lab 6](https://github.com/user-attachments/assets/8c871511-6e55-4e80-be11-86e9efd87cad)
+![Alt text](images/image6.png)
 
 ### Lab 7: Overlapping Patterns
 module overlap_case (input i0,i1,i2,i3, input [1:0] sel, output reg y);
@@ -104,7 +104,7 @@ case(sel)
 endcase
 end
 endmodule
-![Lab 7](https://github.com/user-attachments/assets/4ccf37aa-5502-4750-bedb-9b2ec0748a53)
+![Alt text](images/image7.png)
 
 ### Lab 8: Selective Assignments
 module selective_assign (input i0,i1,i2, input [1:0] sel, output reg y,x);
@@ -116,8 +116,17 @@ default: begin x=i1; y=i2; end
 endcase
 end
 endmodule
-![Lab 8](https://github.com/user-attachments/assets/3f6068f3-726d-4192-b3cd-f88b3611e752)
+![Alt text](images/image8.png)
 
+### Partial Case
+![Alt text](images/image9)
+
+### Bad Case
+### Before synthesis
+![Alt text](images/image10)
+### After synthesis
+![Alt text](images/image11)
+![Alt text](images/image12)
 > **Reference Day 1** for complete synthesis workflow.
 
 ---
@@ -150,6 +159,9 @@ full_adder fa_inst (.a(a[idx]), .b(b[idx]), .sum(s[idx]));
 end
 endgenerate
 
+![Alt text](images/image13)
+![Alt text](images/image14)
+
 ---
 
 ## 6. Ripple Carry Adder Fundamentals
@@ -159,8 +171,6 @@ endgenerate
 Bit0: FA0 → carry1
 Bit1: FA1(cin=carry1) → carry2
 Bit2: FA2(cin=carry2) → ...
-
-![Adder Chain](https://github.com/user-attachments/assets/f1ec27d4-b770-4d7a-a418-6435fc81f538)
 
 ---
 
@@ -175,7 +185,6 @@ for (idx=0; idx<4; idx=idx+1)
 if (idx == sel) y = packed[idx];
 end
 endmodule
-![Lab 9](https://github.com/user-attachments/assets/80789638-c349-44a9-92f4-7597d5925c63)
 
 ### Lab 10: 8-Way Distributor (Case)
 module demux8_case (output [7:0] outs, input [2:0] sel, input data);
@@ -191,7 +200,7 @@ case(sel)
 endcase
 end
 endmodule
-![Lab 10](https://github.com/user-attachments/assets/1836a255-e260-47de-9a8e-45899b19fc03)
+![Alt text](images/image15.png)
 
 ### Lab 11: 8-Way Distributor (Loop)
 module demux8_loop (output [7:0] outs, input [2:0] sel, input data);
@@ -204,7 +213,7 @@ for (idx=0; idx<8; idx=idx+1)
 if (idx == sel) result[idx] = data;
 end
 endmodule
-![Lab 11](https://github.com/user-attachments/assets/a5a2c004-a16f-44cd-8d80-c23f1c932e6c)
+![Alt text](images/image16.png)
 
 ### Lab 12: 8-Bit Adder Array (Generate)
 module adder_chain (input [7:0] op1, op2, output [8:0] result);
@@ -227,7 +236,7 @@ endmodule
 module full_adder (input a,b,cin, output sum, cout);
 assign {cout, sum} = a + b + cin;
 endmodule
-![Lab 12](https://github.com/user-attachments/assets/1d8876f9-e303-4a73-945e-97756a37bb73)
+![Alt text](images/image17.png)
 
 ---
 
