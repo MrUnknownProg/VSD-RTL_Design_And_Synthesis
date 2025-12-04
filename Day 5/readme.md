@@ -119,14 +119,14 @@ endmodule
 ![Alt text](images/image8.png)
 
 ### Partial Case
-![Alt text](images/image9)
+![Alt text](images/image9.png)
 
 ### Bad Case
 ### Before synthesis
-![Alt text](images/image10)
+![Alt text](images/image10.png)
 ### After synthesis
-![Alt text](images/image11)
-![Alt text](images/image12)
+![Alt text](images/image11.png)
+![Alt text](images/image12.png)
 > **Reference Day 1** for complete synthesis workflow.
 
 ---
@@ -159,8 +159,8 @@ full_adder fa_inst (.a(a[idx]), .b(b[idx]), .sum(s[idx]));
 end
 endgenerate
 
-![Alt text](images/image13)
-![Alt text](images/image14)
+![Alt text](images/image13.png)
+![Alt text](images/image14.png)
 
 ---
 
